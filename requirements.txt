@@ -1,0 +1,25 @@
+# API
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+python-multipart>=0.0.12
+pydantic-settings>=2.6.0
+
+# PDF (A1)
+pypdfium2>=4.30.0
+
+# OCR — Tesseract fallback (system package: tesseract-ocr + lang packs)
+pytesseract>=0.3.13
+Pillow>=11.0.0
+opencv-python-headless>=4.10.0
+numpy>=1.26.0
+
+# Fast OCR (primary engine): RapidOCR with PP-OCRv5 Latin model on GPU
+rapidocr>=3.8.0
+onnxruntime-gpu>=1.26.0
+
+# Vision LLM client (Ollama HTTP API) — used as smart-mode fallback / vision mode
+requests>=2.32.0
+
+# Queue (A2)
+redis>=5.2.0
+rq>=2.0.0
